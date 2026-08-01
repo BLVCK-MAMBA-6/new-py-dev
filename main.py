@@ -42,5 +42,5 @@ async def ping_database():
     Checks the connection to the Supabase backend.
     """
     if not SUPABASE_URL or SUPABASE_URL == "your-supabase-url":
-        raise HTTPException(status_code=503, detail="Database credentials not configured.")
+        raise HTTPException(status_code=503, detail="Database credentials not configured!")
     return {"message": "Database connection established."}
