@@ -23,7 +23,7 @@ SUPABASE_KEY = os.environ.get("SUPABASE_KEY", "your-supabase-key")
 try:
     supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 except Exception as e:
-    print(f"Database initialization bypassed or failed: {e}")
+    print(f"Database initialization failed: {e}")
 
 class HealthCheck(BaseModel):
     status: str
