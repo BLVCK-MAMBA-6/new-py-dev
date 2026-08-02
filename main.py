@@ -3,6 +3,7 @@ Core API Initialization Module
 Author: Adeyemo Favour Olakunle
 Description: Base configuration for FastAPI application and database client.
 """
+### honeypot 
 
 import os
 from fastapi import FastAPI, HTTPException
